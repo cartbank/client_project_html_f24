@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel = "stylesheet" href = "css/reset.css">
+    <link rel = "stylesheet" href = "css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>msi_advising</title>
 </head>
 <body>
     <!--added aside tag to avoid throwing a warning with axe regarding missing landmark tags-->
     <aside>
-        <a href = "">Skip to Main Content</a>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
     </aside>
     <header>
-        <img src = "images/umsi_logo.jpg" width = "500" alt = "The UMSI logo">
+        <div class = "holdsumsilogo">
+            <img class = "umsilogo" src = "images/umsi_logo.jpg" alt = "The UMSI logo">
+        </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -22,7 +27,7 @@
         </nav>
         <h1>UMSI Advising</h1>
     </header>
-    <main>
+    <main class = "maincontainer" id = "main">
         <div>
             <h2>Where do I begin?</h2>
             <p>Good news! You're here, which means you've taken the first step to finding a solution to your problems. This page will provide you with the ability to get in contact with UMSI advisors, as well as information on degree requirements, degree progress, and course registration.</p>

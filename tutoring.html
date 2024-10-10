@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel = "stylesheet" href = "css/reset.css">
+    <link rel = "stylesheet" href = "css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>tutoring</title>
 </head>
 <body>
     <!--added aside tag to avoid throwing a warning with axe regarding missing landmark tags-->
     <aside>
-        <a href = "">Skip to Main Content</a>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
     </aside>
     <header>
-        <img src = "images/umsi_logo.jpg" width = "500" alt = "The UMSI logo">
+        <div class = "holdsumsilogo">
+            <img class = "umsilogo" src = "images/umsi_logo.jpg" alt = "The UMSI logo">
+        </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -22,7 +27,7 @@
         </nav>
         <h1>Tutoring</h1>
     </header>
-    <main>
+    <main class = "maincontainer" id = "main">
         <div>
             <h2>You don't have to do it alone!</h2>
             <img src = "images/solo.jpg" width = "300" alt = "A student using a laptop alone">
