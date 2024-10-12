@@ -181,9 +181,10 @@ footer p {
     margin: 0;
     color: #00274C;
 }
-footer ul {
+/*below is no longer necessary--may reuse if footer is made into grid in desktop or tablet view*/
+/*footer ul {
     font-family: Arial, Helvetica, sans-serif;
     color: #00274C;
-}
+}*/
 
 /*media queries for tablet/desktop view will be added here in the future*/
