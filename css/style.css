@@ -10,6 +10,18 @@ body {
 /*adds underline for links*/
 a {
     text-decoration: underline;
+    /*transparent border prevents elements from resizing when focus border is applied*/
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+/*ensures user knows when item is in focus*/
+:focus {
+    border: 2px solid #00274C;
+    border-radius: 5px;
+}
+.currentpage a:focus {
+    border: 2px solid #FFCB05;
+    border-radius: 5px;
 }
 
 /*basic styling for list items*/
@@ -117,7 +129,7 @@ nav ul {
 }
 nav ul li {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: oswald;
     padding : 10px;
     display : grid;
@@ -153,12 +165,25 @@ nav ul li a {
 
 /*styles footer*/
 footer {
-    background-color: #00274C;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 5px 0 black;
+    text-align: center;
+}
+footer img {
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    margin-right: auto;
+    margin-left: auto;
 }
 footer p {
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 0px;
+    /*here to override previous styling*/
+    margin: 0;
+    color: #00274C;
+}
+footer ul {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00274C;
 }
 
 /*media queries for tablet/desktop view will be added here in the future*/
